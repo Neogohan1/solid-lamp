@@ -12,6 +12,26 @@ let myStyles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     flex:1
   },
+  columnText1:{
+    flex:1,
+    color:'red',
+  },
+  textInput:{
+    height:40,
+    flex:3
+  },
+  radiusPicker:{
+    flex:1
+  },
+  columnText2:{
+    flex:1,
+    color:'blue',
+    textAlign: 'right'
+  },
+  rowContainer:{
+    flexDirection: 'row',
+    padding:10,
+  },
   listview:{
     flex:1,
   },

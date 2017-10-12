@@ -12,9 +12,6 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <MainScreenNavigator />
-        <Text>
-          Test
-        </Text>
       </View>
     );
   }
