@@ -8,6 +8,7 @@ const constants = {
 
 let myStyles = StyleSheet.create({
   container:{
+    paddingTop: Platform.OS === 'ios' ? 20:StatusBar.currentHeight,
     backgroundColor: '#f2f2f2',
     flex:1
   },

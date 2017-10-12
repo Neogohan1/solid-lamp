@@ -1,15 +1,28 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { TabNavigator} from 'react-navigation';
-import styles from './includes/styles';
+const styles = require('./includes/style');
+
+import MainScreen from './screens/MainScreen';
+import Watchlist from './screens/Watchlist';
+import History from './screens/History';
+
 export default class App extends React.Component {
-  render() {
+  render() {//test
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <MainScreenNavigator />
+        <Text>
+          Test
+        </Text>
       </View>
     );
   }
+
 }
+
+const MainScreenNavigator = TabNavigator({
+  MainScreen: { screen: MainScreen },
+  Watchlist: { screen: Watchlist},
+  History: { screen: History},
+});
